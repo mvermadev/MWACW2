@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## This app has been deployed on the server Netlify. URL: https://shangri-la.netlify.app/
+#Links1: https://shangri-la.netlify.app/Web/User
+#Links2: https://shangri-la.netlify.app/Web/Auth
+
 ## Getting Started
 
 First, install the nodejs in the system, then run:
