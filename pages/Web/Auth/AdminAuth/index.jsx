@@ -4,18 +4,18 @@ import Route from 'next/router'
 import Header from '../../../../components/Header';
 
 // Authentication of the admin user only.
-export default function index() {
+export default function Index() {
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Password, setPassword] = useState("");
 
   const handleSubmit = async (e)=>{
       e.preventDefault();
       var res = await fetch("http://localhost:3000/api/posts", {
       method: "POST",
       body: JSON.stringify({
-        email: email,
-        password: password,
+        email: Email,
+        password: Password,
         operation: 'login'
       }),
       }).then(res=>{
@@ -41,10 +41,10 @@ export default function index() {
       autoComplete="off"
     >
       <TextField id="standard-basic" type="email" label="Email" variant="standard"
-      onChange={(e)=>setEmail(e.target.value)} value={email}      
+      onChange={(e)=>setEmail(e.target.value)} value={Email}      
       />
       <TextField type="password" id="standard-basic" label="Password" variant="standard" 
-      onChange={(e)=>setPassword(e.target.value)} value={password}
+      onChange={(e)=>setPassword(e.target.value)} value={Password}
       />
     </Box>
     {/* </Paper> */}

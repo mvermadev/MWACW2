@@ -3,8 +3,7 @@ import {GradientDefs, RadialChart} from 'react-vis';
 import clientPromise from "../../../../lib/mongodb";
 
 // Statistical view of the record.
-export default function index({userData}) {
-    const [data, setData] = useState([])
+export default function Index({userData}) {
     console.log(userData.map((val)=>{val.userdata.map((val)=>{val.question == "1" ? val.answers.map((subVal)=>subVal) : ''})}))
 
     // useEffect(async ()=>{
